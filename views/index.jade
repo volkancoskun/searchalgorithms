@@ -1,0 +1,46 @@
+extends layout
+
+block content
+
+
+  h1 Search Algorithms
+    small   Volkan Coskun
+  .col-lg-6
+     form(role='form', method="post")
+       .form-group
+         label From
+           select.form-control(name='from')
+             option(value='A') A
+             option(value='B') B
+             option(value='X') X
+             option(value='Y') Y
+             option(value='Z') Z
+             option(value='K') K
+             option(value='L') L
+             option(value='M') M
+             option(value='N') N
+             option(value='T') T
+       .form-group
+         label To
+           select.form-control(name='to')
+             option(value='A') A
+             option(value='B' , selected="true") B
+             option(value='X') X
+             option(value='Y') Y
+             option(value='Z') Z
+             option(value='K') K
+             option(value='L') L
+             option(value='M') M
+             option(value='N') N
+             option(value='T') T
+       .form-group
+         label Algorithm
+           select.form-control(name='algorithm')
+             option(value='BFS') Breadth First Search
+             option(value='UCS') Uniform Cost Search
+             option(value='ASTAR') A* Search
+             option(value='GBS') Greedy Best-First Search
+       button.btn.btn-success(type='submit') HYPE!
+
+
+
